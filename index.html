@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tindog</title>
-</head>
-<body>
-    <div class="container">
-        <nav>
-            <a class="nav-link" href="#">
-                <img class="nav-icon" id="profile-icon" src="./images/icon-profile.png" alt="profile">
-            </a>
-            <a class="nav-link" href="#">
-                <img class="nav-icon" id="tindog-icon" src="./images/logo.png" alt="Tindog">
-            </a>
-            <a class="nav-link" href="#">
-                <img class="nav-icon" id="chat-icon" src="./images/icon-chat.png" alt="Chat">
-            </a>
-        </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tindog</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <a class="nav-link" href="#">
+                    <img
+                        class="nav-icon"
+                        id="profile-icon"
+                        src="./images/icon-profile.png"
+                        alt="profile"
+                    />
+                </a>
+                <a class="nav-link" href="#">
+                    <img
+                        class="nav-icon"
+                        id="tindog-icon"
+                        src="./images/logo.png"
+                        alt="Tindog"
+                    />
+                </a>
+                <a class="nav-link" href="#">
+                    <img
+                        class="nav-icon"
+                        id="chat-icon"
+                        src="./images/icon-chat.png"
+                        alt="Chat"
+                    />
+                </a>
+            </nav>
 
-        <div class="container dog-image">
-            <div class="dog-data">
-                <div class="dog-details">Teddy, 30</div>
-                <div class="dog-line">How you doin?</div>
+            <div class="dog-image">
+                <div class="dog-data">
+                    <div class="dog-details">Teddy, 30</div>
+                    <div class="dog-line">How you doin?</div>
+                </div>
+            </div>
+            <div class="ratings">
+                <button class="rating-icon" id="dislike-icon">
+                    <img src="./images/icon-cross.png" alt="Dislike" />
+                </button>
+                <button class="rating-icon" id="like-icon">
+                    <img src="./images/icon-heart.png" alt="Like" />
+                </button>
             </div>
         </div>
-        <div class="container ratings">
-            <button class="rating-icon" id="dislike-icon"><img src="./images/icon-cross.png" alt="Dislike"></button>
-            <button class="rating-icon" id="like-icon"><img src="./images/icon-heart.png" alt="Like"></button>
-        </div>
-    </div>
-    
-    <script src="/index.js" type="module"></script>
-</body>
+
+        <script src="/index.js" type="module"></script>
+    </body>
 </html>

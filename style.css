@@ -1,5 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+* {
+    line-height: 1;
+}
+
+body {
+    background-color: #B7B7B7;
+    font-family: 'Poppins', sans-serif;
+    
+}
 
 .container {
+    background-image: linear-gradient(#fff, #F6F7FB);
+    width: 100vw;
+    max-width: 700px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+
+/* NAVIGATION */
+nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-icon {
+    height: 2rem;
+    margin: 1.2em;
+}
+
+
+#tindog-icon {
+    height: 2.5rem;
+}
+
+.nav-icon:hover {
+    transform: scale(1.2);
+}
+
+/* MAIN */
+.dog-image {
+    background-image: url(./images/dog-bella.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    width: 95%;
+    height: 70vh;
+    margin: 0 auto;
+    border-radius: 1em;
+}
+
+.dog-data {
+    margin: 2em 1.5em;
+    text-shadow: 0 0 1px black;
+}
+
+.dog-details {
+    color: #F8F8F8;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .3em;
+}
+
+.dog-line {
+    color: #B7B7B7;
+    font-size: 1.5rem;
+}
+
+/* RATING */
+
+.ratings {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rating-icon {
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    min-width: 90px;
+    height: 90px;
+    margin: 8% 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 20px #E9E9EA;
+}
+
+.rating-icon:hover {
+    cursor: pointer;
+}
+
+#like-icon:hover {
+    background-color: #DBFFF4;
+    box-shadow: 0px 10px 20px #CCF1E6;
     
+}
+
+#dislike-icon:hover {
+    background-color: #FFE7EF;
+    box-shadow: 0px 10px 20px #EDD9DF;
+}
+
+
+
+/* MEDIA QUERY */
+@media (min-width: 600px) {
+    .dog-details {
+        font-size: 3rem;
+    }
+    .dog-line {
+        font-size: 1.8rem;
+    }
+
+    .ratings {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .rating-icon {
+        margin: 7% 1%;
+    }
 }
