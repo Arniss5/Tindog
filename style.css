@@ -2,20 +2,21 @@
 
 * {
     line-height: 1;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #B7B7B7;
+    background-color: #ffd8d5;
     font-family: 'Poppins', sans-serif;
-    
 }
 
 .container {
-    background-image: linear-gradient(#fff, #F6F7FB);
+    background-image: linear-gradient(#fff, #d4d4d4);
     width: 100vw;
-    max-width: 700px;
+    max-width: 650px;
     min-height: 100vh;
     margin: 0 auto;
+    position: relative;
 }
 
 
@@ -42,16 +43,19 @@ nav {
 }
 
 /* MAIN */
-.dog-image {
-    background-image: url(./images/dog-bella.jpg);
+.dog-image,
+.no-more-dogs {
     background-position: center;
     background-size: cover;
     display: flex;
-    align-items: flex-end;
     width: 95%;
     height: 70vh;
     margin: 0 auto;
     border-radius: 1em;
+}
+.dog-image {
+    align-items: flex-end;
+    transition: filter ease 1s;
 }
 
 .dog-data {
@@ -66,7 +70,7 @@ nav {
     margin-bottom: .3em;
 }
 
-.dog-line {
+.dog-bio {
     color: #B7B7B7;
     font-size: 1.5rem;
 }
@@ -98,7 +102,6 @@ nav {
 #like-icon:hover {
     background-color: #DBFFF4;
     box-shadow: 0px 10px 20px #CCF1E6;
-    
 }
 
 #dislike-icon:hover {
@@ -106,14 +109,80 @@ nav {
     box-shadow: 0px 10px 20px #EDD9DF;
 }
 
+.rating-icon-inner {
+    pointer-events: none;
+}
+
+/* CHAT */
+.chat {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 1em auto;
+    box-shadow: 1px 1px 5px -2px #FA5B61;
+}
+
+.chat-avatar {
+    min-width: 80px;
+    height: 80px;
+    border-radius: 50%;  
+    margin: .7em;
+}
+.chat-name {
+    font-weight: 600;
+}
+
+.chat-message {
+    font-size: .9rem;
+    padding-right: 1em;
+}
+
+.highlight {
+    color: #0ADA9A;
+}
+
+/* TOGGLED */
+.no-more-dogs {
+    color: #FA5B61;
+    background-color: white;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    padding: 2.5%;
+    border: solid 3px black;
+}
+
+.badge-icon {
+    width: 40%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    transform: rotate(-30deg)
+}
+
+.hidden {
+    display: none;
+}
+
+.swiped {
+    filter: blur(4px);
+}
 
 
 /* MEDIA QUERY */
-@media (min-width: 600px) {
+@media (min-width: 650px) {
+    .container {
+        border-radius: 5%;
+        border: solid 3px black;
+        overflow: hidden;
+        min-height: 98vh;
+        margin: 1vh auto;
+    }
     .dog-details {
         font-size: 3rem;
     }
-    .dog-line {
+    .dog-bio {
         font-size: 1.8rem;
     }
 
@@ -123,5 +192,16 @@ nav {
     }
     .rating-icon {
         margin: 7% 1%;
+    }
+
+    .chat-avatar {
+        margin: 1.1em;
+    }
+    .chat-message {
+        font-size: 1rem;
+    }
+
+    .no-more-dogs{
+        font-size: 2.5rem;
     }
 }

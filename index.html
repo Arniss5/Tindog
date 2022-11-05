@@ -39,21 +39,37 @@
                     />
                 </a>
             </nav>
-
-            <div class="dog-image">
-                <div class="dog-data">
-                    <div class="dog-details">Teddy, 30</div>
-                    <div class="dog-line">How you doin?</div>
+            <main id="main-content">
+                <div class="dog-profile" id="dog-profile">
+                    <!-- RENDER DOG PROFILE -->
                 </div>
-            </div>
-            <div class="ratings">
-                <button class="rating-icon" id="dislike-icon">
-                    <img src="./images/icon-cross.png" alt="Dislike" />
-                </button>
-                <button class="rating-icon" id="like-icon">
-                    <img src="./images/icon-heart.png" alt="Like" />
-                </button>
-            </div>
+                <img
+                    class="badge-icon hidden"
+                    id="like-badge"
+                    src="./images/badge-like.png"
+                />
+                <img
+                    class="badge-icon hidden"
+                    id="nope-badge"
+                    src="./images/badge-nope.png"
+                />
+                <div class="ratings">
+                    <button class="rating-icon" id="dislike-icon">
+                        <img
+                            class="rating-icon-inner"
+                            src="./images/icon-cross.png"
+                            alt="Dislike"
+                        />
+                    </button>
+                    <button class="rating-icon" id="like-icon">
+                        <img
+                            class="rating-icon-inner"
+                            src="./images/icon-heart.png"
+                            alt="Like"
+                        />
+                    </button>
+                </div>
+            </main>
         </div>
 
         <script src="/index.js" type="module"></script>
