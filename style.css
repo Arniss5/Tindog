@@ -141,8 +141,32 @@ nav {
     color: #0ADA9A;
 }
 
+
+/* PROFILE */
+.user-profile {
+    background-color: #fff;
+    text-align: center;
+    width: 80%;
+    margin: 2em auto;
+    padding: 1em;
+    box-shadow: 1px 1px 5px -2px #FA5B61;
+}
+.user-profile p {
+    line-height: 1.5rem;
+}
+
+.fa-user {
+    font-size: 8rem;
+    color: #FA5B61;
+}
+
+.bold {
+    font-weight: 600;
+}
+
 /* TOGGLED */
-.no-more-dogs {
+.no-more-dogs,
+.no-messages {
     color: #FA5B61;
     background-color: white;
     font-size: 2rem;
@@ -151,6 +175,13 @@ nav {
     width: 90%;
     padding: 2.5%;
     border: solid 3px black;
+}
+
+.no-messages {
+    border: none;
+    justify-content: center;
+    padding: 1em 0;
+    line-height: 2.5rem;
 }
 
 .badge-icon {
@@ -168,6 +199,8 @@ nav {
 .swiped {
     filter: blur(4px);
 }
+
+
 
 
 /* MEDIA QUERY */
